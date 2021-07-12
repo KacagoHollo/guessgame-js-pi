@@ -10,11 +10,11 @@ let attempts = 1;
 while (parseInt(guess) !== targetNum) {
     if (guess === 'q') break;
     attempts++;
-    if (guess > targetNum) {
-        guess = prompt('Túl nagy! Próbáld újra!')
+    if (guess < targetNum) {
+        guess = prompt('Túl alacsony! Próbáld újra!')
     }
     else {
-        guess = prompt('Túl alacsony! Próbáld újra!')
+        guess = prompt('Túl nagy! Próbáld újra!')
     }
 };
 if (guess === 'q') {
