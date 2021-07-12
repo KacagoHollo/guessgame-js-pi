@@ -7,7 +7,7 @@ console.log(`A megadott maximum számod a(z) ${maximum}`)
 const targetNum = Math.floor(Math.random * maximum) + 1;
 let guess = prompt('Tippelj, melyik számra gondoltam?!');
 let attempts = 1;
-while (parseInt(guess !== targetNum)) {
+while (parseInt(guess) !== targetNum) {
     if (guess === 'q') break;
     attempts++;
     if (guess > targetNum) {
