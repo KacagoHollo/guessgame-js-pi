@@ -4,7 +4,7 @@ while (!maximum) {
 }
 console.log(`A megadott maximum számod a(z) ${maximum}`)
 
-const targetNum = Math.floor(Math.random * maximum) + 1;
+const targetNum = Math.floor(Math.random() * maximum) + 1;
 let guess = prompt('Tippelj, melyik számra gondoltam?!');
 let attempts = 1;
 while (parseInt(guess) !== targetNum) {
@@ -24,3 +24,4 @@ else {
     console.log('Gratulálok, eltaláltad!')
     console.log(`Összesen ${attempts} alkalommal próbálkoztál!`)
 }
+
